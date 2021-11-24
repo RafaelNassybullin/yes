@@ -5,4 +5,9 @@
 
 .banner-wrap{
   display: flex;
+  @media(max-width: 433px){
+      flex-direction: column;
+  }
 }
+
+

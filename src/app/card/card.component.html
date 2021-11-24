@@ -1,10 +1,12 @@
-<div class="card-container">
-  <div class="image-wrap">
-    <img src="assets/images/16cd49adf5924b2eecbf1762f6d222ae.jpg" alt="">
-  </div>
-  <div class="text-wrap">
-      <div class="card-title">Noemi</div>
-      <p>2 colours</p>
-      <h4>${{'452'}}</h4>
+<div class="card-wr">
+  <div class="card-container" *ngFor="let ca of cards">
+    <div class="image-wrap">
+      <img src="{{ca.cardImg}}" alt="">
+    </div>
+    <div class="text-wrap">
+      <div class="card-title">{{ca.name}}</div>
+      <p>{{ca.color}}</p>
+      <h4>${{ca.price}}</h4>
+    </div>
   </div>
 </div>

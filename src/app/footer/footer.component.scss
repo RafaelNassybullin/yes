@@ -1,0 +1,28 @@
+.pre-footer {
+  width: 100%;
+  padding: 0 9.583vw;
+  height: 7.222vw;
+  background: #AABAD0;
+  display: flex;
+  border-bottom: black solid 0.208vw;
+  align-items: center;
+  justify-content: space-between;
+  @media(max-width: 433px) {
+    padding: 0 3.583vw;
+    height: 16.222vw;
+  }
+
+  .footer-logo {
+    font-size: 4.792vw;
+    @media(max-width: 433px) {
+      font-size: 12.792vw;
+    }
+  }
+
+  h2 {
+    font-size: 1.250vw;
+    @media(max-width: 433px) {
+      font-size: 4.25vw;
+    }
+  }
+}

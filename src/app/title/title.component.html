@@ -1,4 +1,5 @@
-<div class="title-container">
-  <h1>{{title}}</h1>
-  <p class="collection">{{'SEE THE COLLECTION'}}</p>
+
+<div class="title-container" *ngFor="let ii of stockTitl">
+  <h1>{{ii.mainTitle}}</h1>
+  <p class="collection">{{ii.routeButton}}</p>
 </div>

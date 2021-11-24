@@ -1,11 +1,18 @@
 .banner-container{
   overflow: hidden;
   margin-top: 10.417vw;
+  @media(max-width: 433px){
+      margin-top: 0;
+  }
   .wrapper2{
     width: 50.000vw;
-  height: 35.056vw;
+    height: 35.056vw;
     position: relative;
     z-index: -1;
+    @media(max-width: 433px){
+        width: 100vw;
+height: 77.056vw;
+    }
   }
   img{
     width: 100%;
@@ -18,12 +25,15 @@
     align-items:center;
     justify-content:center;
     position: absolute;
-    width: 19.444vw;
-    height: 7.639vw;
+    padding: 2.2vw 5.597vw;
     bottom: 0;
     font-size: 1.250vw;
     right: 0;
-    background: pink;
+    background: #FFC0CB;
+    @media(max-width: 433px){
+        padding: 4.2vw 8.597vw;
+font-size: 4.25vw;
+    }
   }
 }
 

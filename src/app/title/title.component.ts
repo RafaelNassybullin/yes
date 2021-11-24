@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -6,12 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./title.component.scss']
 })
 export class TitleComponent implements OnInit {
-
   constructor() { }
-
-  title:string = 'New in stock'
-
-  ngOnInit(): void {
-  }
+  @Input() stockTitl:Array<{mainTitle: string, routeButton: string}> = []
+  ngOnInit(): void {}
 
 }

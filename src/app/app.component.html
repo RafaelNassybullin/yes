@@ -1,9 +1,24 @@
-<app-navbar></app-navbar>
-<app-hero></app-hero>
-<app-who-are></app-who-are>
-<!--<app-card></app-card>-->
+<app-navbar></app-navbar><!--навбар-->
+<app-hero></app-hero><!--hero пока пустой-->
+<app-banner-block [io]="bannerArr" class="banner-wrap"></app-banner-block><!--баннер мужчина женщина-->
+<app-title [stockTitl]="titlesStock"></app-title><!--тайтл с кнопкой-->
+<app-card [cards]="cardStock"></app-card><!--карточки с очками-->
+<app-mitchel></app-mitchel>
+<app-title [stockTitl]="titlesBestsellers"></app-title><!--тайтл с кнопкой-->
+<app-card [cards]="cardBestsellers"></app-card><!--карточки с очками-->
+<app-banner-block [io]="bannerArrTwo" class="banner-wrap"></app-banner-block><!--баннер мужчина женщина-->
+<app-title [stockTitl]="titlesBrands"></app-title><!--тайтл с кнопкой-->
+<app-words></app-words>
+<app-who-are></app-who-are><!--пред-футер-->
+<app-footer></app-footer>
 
-<app-banner-block class="banner-wrap"></app-banner-block>
 
-<!--<app-title></app-title>-->
-<app-stock></app-stock>
+
+
+
+
+
+
+
+
+<!--<app-testanim></app-testanim>-->

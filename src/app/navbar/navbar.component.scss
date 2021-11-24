@@ -9,9 +9,15 @@
   padding: 0 4.722vw;
   z-index: 8;
   background: white;
+  @media(max-width: 433px){
+      height: 16.694vw;
+  }
   .logo {
     font-size: 4.792vw;
     transform: translateY(-0.7vw);
+    @media(max-width: 433px){
+        font-size: 12.792vw;
+    }
   }
 
   ul {
@@ -19,7 +25,13 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-
+    @media(max-width: 433px){
+      //  flex-direction: column;
+      //position: absolute;
+      //top: 0;
+      //left: 0;
+      display: none;
+    }
     li {
       display: flex;
       align-items: center;
@@ -32,6 +44,9 @@
       width: 12.708vw;
       height: 102%;
       cursor: pointer;
+      &:hover{
+        background: #FFC0CB;
+      }
 
       &:first-child {
         border-right: unset;
@@ -45,5 +60,9 @@
 
   .customer {
     font-size: 1.528vw;
+    cursor: pointer;
+    @media(max-width: 433px){
+        font-size: 5.528vw;
+    }
   }
 }

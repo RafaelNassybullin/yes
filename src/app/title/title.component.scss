@@ -5,13 +5,21 @@
   border-bottom: black solid 0.208vw;
   margin: 11.528vw 0 3.8vw 0;
   align-items: center;
+  @media(max-width: 433px){
 
+  }
   h1 {
     font-size: 4.861vw;
+    @media(max-width: 433px){
+      font-size: 7.861vw;
+    }
   }
 
   p {
     font-size: 1.181vw;
-
+    cursor: pointer;
+    @media(max-width: 433px){
+      font-size: 3.181vw;
+    }
   }
 }

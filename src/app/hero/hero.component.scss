@@ -1,5 +1,67 @@
-.heo{
+.hero{
+  margin-top: 10vw;
   width: 100%;
-  height: 1000px;
-  //background: gainsboro;
+
+  padding: 0 8.333vw;
+  @media(max-width: 433px){
+      padding: 22vw 3.333vw;
+  }
+  .text-container{
+    position: relative;
+    display: flex;height: 40.139vw;
+    justify-content: center;
+    flex-direction: column;
+    @media(max-width: 433px){
+        height: 130.139vw;
+        justify-content: flex-start;
+    }
+
+    .wrap{
+      transform: translateY(5vw);
+      z-index: 4;
+      @media(max-width: 433px){
+          transform: translateY(9vw);
+      }
+    }
+
+    h1{
+      font-size: 5.833vw;
+      font-weight: 400;
+      @media(max-width: 433px){
+        font-size: 11.833vw;
+        margin-bottom: 7vw;
+      }
+    }
+    a{
+      font-size: 1.181vw;
+      text-decoration: none;
+      color: black;
+      margin: 2vw;
+      @media(max-width: 433px){
+          font-size: 4.181vw;
+          margin: 0;
+      }
+      span{
+
+      }
+    }
+    .img-wrapper{
+      width: 33.889vw;
+      height: 40.139vw;
+      position: absolute;
+      top: 0;
+      right: 0;
+      @media(max-width: 433px){
+          width: 71.889vw;
+          height: 87.139vw;
+          top: 37vw;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
 }
