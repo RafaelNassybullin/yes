@@ -43,6 +43,13 @@
       }
       span{
 
+        .arrow{
+          width: 3.819vw;
+          margin-left: 0.625vw;
+          @media(max-width: 433px){
+            width: 10.8vw;
+          }
+        }
       }
     }
     .img-wrapper{
